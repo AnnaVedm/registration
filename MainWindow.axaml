@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="500"
+        x:Class="AvaloniaApplication3.MainWindow"
+        Title="AvaloniaApplication3">
+	<Grid ColumnDefinitions="300">
+	<StackPanel Margin="20">
+		<TextBlock Margin="0 5" Foreground="Fuchsia" >ОКНО РЕГИСТРАЦИИ</TextBlock>
+			<TextBlock Margin="0 5" FontStyle="Italic" Foreground="Blue" >Имя или никнейм:</TextBlock>
+			<TextBox  Watermark="Enter your name"/>
+			<TextBlock Margin="0 5" FontStyle="Italic" Foreground="Blue" >Пароль:</TextBlock>
+			<TextBox PasswordChar="*" Watermark="Enter your password"/>
+		<TextBlock Margin="0 5" FontStyle="Italic" Foreground="Blue">Повторите пароль:</TextBlock>
+		<TextBox PasswordChar="*" Watermark="Enter your password"/>
+		<TextBlock Margin="0 5" FontStyle="Italic" Foreground="Blue" >Электронная почта:</TextBlock>
+		<TextBox PasswordChar="*" Watermark="Enter your email"/>
+		
+		</StackPanel>
+		<StackPanel Margin="20">
+			<TextBlock Margin="0 270 0 5" FontStyle="Italic" Foreground="Blue" >Выберите пол</TextBlock>
+			<RadioButton GroupName="First Group"
+					  Content="Мужской"/>
+			<RadioButton GroupName="First Group"
+					  Content="Женский"/>
+			<RadioButton GroupName="First Group"
+					  Content="Не указывать"/>
+			<Button Content="Зарегестрироваться!"/>
+		</StackPanel>
+	</Grid>
+	</Window>
+
